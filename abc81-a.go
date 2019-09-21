@@ -5,7 +5,11 @@ import "fmt"
 func main() {
 	var s string
 	fmt.Scan(&s)
-	for c in s {
-		
+	ans := 0
+	for _, c := range s {
+		if c == '1' {
+			ans++
+		}
 	}
+	fmt.Println(ans)
 }
